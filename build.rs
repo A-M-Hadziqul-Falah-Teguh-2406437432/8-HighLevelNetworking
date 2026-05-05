@@ -6,7 +6,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .build_server(true)
         .compile_protos(
             &["proto/services.proto"], // Path to your proto file
-            &["proto"], // Directory where the proto file is located
+            &["proto"],                // Directory where the proto file is located
         )?;
     Ok(())
 }
